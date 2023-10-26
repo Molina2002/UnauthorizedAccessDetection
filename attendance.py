@@ -29,15 +29,14 @@ def text_to_speech(user_text):
     engine.runAndWait()
 
 
-haarcasecade_path = "C:\\Users\\patel\\OneDrive\\Documents\\E\\FBAS\\haarcascade_frontalface_default.xml"
+haarcasecade_path = "A:\\DeviceIntrusionDetection\\Attendance-Management-system-using-face-recognition\\haarcascade_frontalface_default.xml"
 trainimagelabel_path = (
-    "C:\\Users\\patel\\OneDrive\\Documents\\E\\FBAS\\TrainingImageLabel\\Trainner.yml"
+    "A:\\DeviceIntrusionDetection\\Attendance-Management-system-using-face-recognition\\TrainingImageLabel\\Trainner.yml"
 )
-trainimage_path = "C:\\Users\\patel\\OneDrive\\Documents\\E\\FBAS\\TrainingImage"
-studentdetail_path = (
-    "C:\\Users\\patel\\OneDrive\\Documents\\E\\FBAS\\StudentDetails\\studentdetails.csv"
+trainimage_path = "A:\\DeviceIntrusionDetection\Attendance-Management-system-using-face-recognition\\TrainingImage"
+studentdetail_path = ("A:\\DeviceIntrusionDetection\\Attendance-Management-system-using-face-recognition\\StudentDetails\\studentdetails.csv"
 )
-attendance_path = "C:\\Users\\patel\\OneDrive\\Documents\\E\\FBAS\\Attendance"
+attendance_path = "A:\\DeviceIntrusionDetection\\Attendance-Management-system-using-face-recognition\\Attendance"
 
 
 window = Tk()
@@ -98,17 +97,17 @@ l1 = tk.Label(window, image=logo1, bg="black",)
 l1.place(x=470, y=10)
 
 titl = tk.Label(
-    window, text="Smart College!!", bg="black", fg="green", font=("arial", 27),
+    window, text="Intrusion Detection System", bg="black", fg="green", font=("arial", 27),
 )
 titl.place(x=525, y=12)
 
 a = tk.Label(
     window,
-    text="Welcome to the Face Recognition Based\nAttendance Management System",
+    text="Welcome to the Unauthorized Device Access Detection System",
     bg="black",
     fg="yellow",
     bd=10,
-    font=("arial", 35),
+    font=("arial", 32),
 )
 a.pack()
 
@@ -290,7 +289,7 @@ def TakeImageUI():
 
 r = tk.Button(
     window,
-    text="Register a new student",
+    text="Register a new owner",
     command=TakeImageUI,
     bd=10,
     font=("times new roman", 16),
@@ -308,7 +307,7 @@ def automatic_attedance():
 
 r = tk.Button(
     window,
-    text="Take Attendance",
+    text="Verify Ownership",
     command=automatic_attedance,
     bd=10,
     font=("times new roman", 16),
@@ -326,7 +325,7 @@ def view_attendance():
 
 r = tk.Button(
     window,
-    text="View Attendance",
+    text="Device Access Log",
     command=view_attendance,
     bd=10,
     font=("times new roman", 16),
